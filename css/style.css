@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.img-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* pulsating arrow start */
+.page-scroll .btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+.page-scroll .btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.page-scroll{
+    position: absolute;
+    bottom:1%;
+    left:0;
+    right:0;
+    margin:0 auto;
+    
+}
+
+.btn-circle {
+  -webkit-transition: background .4s ease-in-out;
+  -moz-transition: background .4s ease-in-out;
+  transition: background .4s ease-in-out;
+    border:0;
+    padding:0;
+}
+
+.btn-circle .fa{
+    color:white;
+    transition: 0.3s all;
+}
+
+.btn-circle .fa:hover {
+  color: #1ac056;
+}
+/* pulsating arrow stop */
+
+
+/* section nav start */
+
+#main-nav {
+    position: fixed;
+    background-color: transparent;
+    border: 0;
+}
+
+#main-nav a {
+    color: white;
+    font-weight: 700;
+    transition: 0.3s all;
+}
+
+#main-nav .navbar-toggle:hover{
+    background-color:rgba(26,192,86,1);
+}
+
+#main-nav span.icon-bar {
+    background-color: white;
+}
+
+#main-nav a:hover {
+    color: #1ac056;
+}
+
+
+/* section nav stop */
+
+
+/* section header start */
+
+.container-main {
+    height: 100vh;
+    background-image: url(../img/cold-forest.jpg);
+    position: relative;
+    background-position: center;
+}
+
+header .header-content {
+    color: white;
+    position: absolute;
+    font-size: 28px;
+    font-weight: 900;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+header .text-top {
+    top: 25%;
+}
+
+header .text-bottom {
+    bottom: 25%;
+}
+
+header .content {
+    position: absolute;
+    background-image: url(../img/foto.jpg);
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+
+/* section header stop */
+
+
+/* section about start */
+section#about{
+    height:100vh;
+}
+
+
+/* section about stop */
