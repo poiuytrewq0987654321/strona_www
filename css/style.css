@@ -30,6 +30,10 @@ body {
     color: #1ac056;
 }
 
+#main-nav .navbar-toggle:hover{
+    background-color: #1ac056;
+}
+
 
 /* section nav stop */
 
