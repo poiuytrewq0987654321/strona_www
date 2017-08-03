@@ -7,92 +7,6 @@ body {
     box-sizing: border-box;
 }
 
-/* pulsating arrow start */
-
-.page-scroll .btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-.page-scroll .btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(1.4);
-        transform: scale(1.4);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {
-    0% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-    50% {
-        -moz-transform: scale(1.4);
-        transform: scale(1.4);
-    }
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-.page-scroll {
-    position: absolute;
-    bottom: 1%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
-.btn-circle {
-    -webkit-transition: background .4s ease-in-out;
-    -moz-transition: background .4s ease-in-out;
-    transition: background .4s ease-in-out;
-    border: 0;
-    padding: 0;
-}
-
-.btn-circle .fa {
-    color: white;
-    transition: 0.3s all;
-}
-
-.btn-circle .fa:hover {
-    color: #1ac056;
-}
-
-
-/* pulsating arrow stop */
-
 
 /* section nav start */
 
@@ -180,6 +94,11 @@ header .content {
 section#about {
     height: 100vh;
     background-color: blue;
+    
+}
+
+#about .container-about{
+    position: relative;
 }
 
 /* section about stop */
@@ -190,6 +109,9 @@ section#skills {
     height: 100vh;
     background-color: yellow;
 }
+#skills .container-skills{
+    position: relative;
+}
 
 /* section skills stop */
 
@@ -199,5 +121,102 @@ section#portfolio {
     height: 100vh;
     background-color: aqua;
 }
+#portfolio .container-portfolio{
+    position: relative;
+}
 
 /* section portfolio stop */
+
+
+
+
+
+
+
+
+
+/* pulsating arrow start */
+
+.page-scroll .btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.page-scroll .btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -moz-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.page-scroll {
+    position: absolute;
+    bottom:1px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.btn-circle {
+    -webkit-transition: background .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out;
+    transition: background .4s ease-in-out;
+    border: 0;
+    padding: 0;
+}
+
+.btn-circle .fa {
+    color: white;
+    transition: 0.3s all;
+}
+
+.btn-circle .fa:hover {
+    color: #1ac056;
+}
+
+
+/* pulsating arrow stop */
