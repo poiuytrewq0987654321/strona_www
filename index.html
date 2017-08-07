@@ -11,15 +11,16 @@
 
 
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
     <nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
         <div class="container">
-            
+
             <div class="navbar-header text-right" id="nav-button">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -37,7 +38,7 @@
                     <li><a href="#portfolio">portfolio</a></li>
                     <li><a href="#contact">kontakt</a></li>
                 </ul>
-                
+
             </div>
         </div>
     </nav>
@@ -62,18 +63,24 @@
     </header>
 
     <section id="about" class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-12 col-xs-12 text-center container-about">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 col-xs-12 text-center container-about">
 
-                </div>
             </div>
+        </div>
     </section>
 
     <section id="skills">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-lg-12 col-xs-12 text-center container-skills">
+                    <div class="container-chart">
+                        <h2>HTML5</h2>
+                        <div>
+                            <canvas id="myChart-html"></canvas>
 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,6 +97,9 @@
         </div>
     </section>
 
+    <footer>
+
+    </footer>
 
 
 
@@ -102,6 +112,49 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- main scripts -->
     <script src="js/main.js"></script>
+    <!-- chart.js scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <script>
+        new Chart(document.getElementById("myChart-html"), {
+    "type": "radar",
+    "data": {
+        "labels": ["HTML5", "CSS3", "Javascript", "jQuery", "GIT", "chęci do nauki"],
+        "datasets": [{
+            "label": "Skills",
+            "data": [80, 70, 40, 40, 60, 100],
+            "fill": true,
+            "backgroundColor": "rgba(255, 99, 132, 0.2)",
+            "borderColor": "rgb(255, 99, 132)",
+            "pointBackgroundColor": "rgb(255, 99, 132)",
+            "pointBorderColor": "#fff",
+            "pointHoverBackgroundColor": "#fff",
+            "pointHoverBorderColor": "rgb(255, 99, 132)"
+        }]
+    },
+    "options": {
+        "elements": {
+            "line": {
+                "tension": 0,
+                "borderWidth": 3,
+            },
+        },
+        scale: {
+            ticks: {
+                "suggestedMin": 0,
+                "suggestedMax": 100,
+            },
+        },
+        legend: {
+            labels: {
+                defaultFontSize: 17,
+            }
+        }
+    },
+});
+
+
+    </script>
+
 </body>
 
 </html>

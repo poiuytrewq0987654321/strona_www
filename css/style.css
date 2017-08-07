@@ -111,7 +111,7 @@ section#about {
 
 section#skills {
     height: 100vh;
-    background-color: yellow;
+    
 }
 #skills .container-skills{
     position: relative;
@@ -123,10 +123,14 @@ section#skills {
 
 section#portfolio {
     height: 100vh;
-    background-color: aqua;
+    background-color: yellow;
 }
 #portfolio .container-portfolio{
     position: relative;
+}
+
+#portfolio .container-chart{
+    width:500px;
 }
 
 /* section portfolio stop */
